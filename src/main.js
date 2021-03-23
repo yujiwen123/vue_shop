@@ -13,6 +13,12 @@ import './assets/fonts/iconfont.css'
 // 再将api添加到Vue实例里, 调用方式this.$api.组件名.方法(传参).then()
 import axios from 'axios'
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+axios.interceptors.request.use(config => {
+  // console.log(config)
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  // 在最后必须return config
+  return config
+})
 Vue.prototype.$http = axios
 
 
