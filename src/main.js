@@ -7,6 +7,7 @@ import './plugins/element.js'
 import './assets/css/global.css'
 // 导入字体图标
 import './assets/fonts/iconfont.css'
+import TreeTable from 'vue-table-with-tree-grid'
 
 // 配置请求的根路径
 // 封装思路: axios单独一个文件管理, 创建一个api文件夹, 在里面配置各个组件的请求方法, 
@@ -22,6 +23,8 @@ axios.interceptors.request.use(config => {
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
+
+Vue.component('tree-table', TreeTable)
 
 new Vue({
   router,

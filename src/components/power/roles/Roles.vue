@@ -1,6 +1,5 @@
 <template>
   <div class>
-    <h2>角色列表</h2>
     <!-- 面包屑导航区 -->
     <el-breadcrumb></el-breadcrumb>
 

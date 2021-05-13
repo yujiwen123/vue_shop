@@ -39,6 +39,11 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "welcome" */ "components/power/roles/Roles.vue"),
       },
+      {
+        path: '/categories',
+        component: () =>
+          import(/* webpackChunkName: "welcome" */ "components/goods/cate/Cate.vue"),
+      },
     ]
   }
 ]
