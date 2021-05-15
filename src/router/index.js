@@ -49,6 +49,16 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "welcome" */ "components/goods/params/Params.vue"),
       },
+      {
+        path: '/goods',
+        component: () =>
+          import(/* webpackChunkName: "welcome" */ "components/goods/list/List.vue"),
+      },
+      {
+        path: '/goods/add',
+        component: () =>
+          import(/* webpackChunkName: "welcome" */ "components/goods/add/Add.vue"),
+      },
     ]
   }
 ]

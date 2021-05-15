@@ -29,3 +29,38 @@ body,
 .el-pagination {
   margin-top: 15px;
 }
+
+.el-steps {
+  margin: 15px 0;
+}
+
+.el-step__title {
+  font-size: 13px;
+}
+
+.el-step__head.is-success {
+  color: rgb(64, 158, 255);
+  border-color: rgb(64, 158, 255);
+}
+
+.el-step__title.is-success {
+  color: rgb(64, 158, 255);
+}
+
+
+/* 去除input type为number时的上下加减按钮 */
+/* 谷歌 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none; 
+    margin: 0; 
+}
+/* 火狐 */
+input{
+    -moz-appearance:textfield;
+}
+
+.ql-editor {
+  min-height: 300px;
+}
