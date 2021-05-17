@@ -11,10 +11,14 @@ import TreeTable from 'vue-table-with-tree-grid'
 
 // 导入富文本编辑器
 import VueQuillEditor from 'vue-quill-editor'
-
+// 导入富文本编辑器对应的样式
+import 'quill/dist/quill.core.css' // import styles
+import 'quill/dist/quill.snow.css' // for snow theme
+import 'quill/dist/quill.bubble.css' // for bubble theme
 
 // 导入NProgress包对应的JS和CSS
 import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 // 跳转路由时，展示进度条 NProgress.start()
 router.beforeEach((to, from, next) => {
